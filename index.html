@@ -50,14 +50,18 @@
         }
 
         li {
-            margin-bottom: 10px; /* Spacing between list items */
+            margin-bottom: 5px; /* Reduced spacing between list items */
             text-align: left; /* Align text to the left for better readability */
         }
 
         details {
-            display: block; /* Changed to block to expand notes below */
+            display: inline; /* Keep the details inline with the list item */
             margin-left: 10px; /* Add some spacing */
-            padding: 10px 0; /* Add vertical padding for better spacing */
+        }
+
+        details[open] p {
+            display: block; /* Show notes on a new line when expanded */
+            margin-top: 5px; /* Add some space above the note text */
         }
 
         /* Media queries for responsive design */
@@ -75,13 +79,6 @@
                 height: 500px; /* Adjust height for mobile screens */
             }
         }
-
-        /* Space at the bottom of the page */
-        body::after {
-            content: '';
-            display: block;
-            height: 50px; /* Adjust height as needed */
-        }
     </style>
 </head>
     
@@ -89,7 +86,7 @@
     <h1>min makes crosswords</h1>
     <p>play the most recent crossword, or scroll down for more</p>
 
-    <h2>#7 Apple Sauce</h2>
+    <h2>Puzzle #7 Apple Sauce</h2>
     <div style="position: relative; text-align: center;">
         <iframe allow="web-share; fullscreen" src="https://amuselabs.com/pmm/crossword?id=0f06d443&set=b6a6d309620f432b97024bfbd25cbc130143e069b737880cc53df5996e612954&embed=1" aria-label="Puzzle Me Game"></iframe>
         <div class="pm-attribution-div">Created by Minhee Han with the <a href="https://amuselabs.com/games/crossword/" target="_blank" style="color: #666666; text-decoration: underline;">crossword puzzle generator</a> from Amuse Labs</div>
