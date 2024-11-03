@@ -1,68 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Makes Crosswords</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        h1, h2 {
+            margin: 20px 0;
+        }
+
+        p {
+            margin: 0 0 20px;
+        }
+
+        /* Responsive iframe */
+        iframe {
+            width: 100%;
+            height: auto;
+            max-height: 700px; /* Adjust as necessary */
+        }
+
+        .pm-attribution-div {
+            font-family: sans-serif;
+            font-size: 12px;
+            color: rgb(102, 102, 102);
+            padding-top: 5px;
+            margin-top: 10px;
+        }
+
+        /* Responsive list styling */
+        ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+            text-align: left; /* Align text to the left for better readability */
+        }
+
+        details {
+            display: block;
+            margin-top: 5px;
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em; /* Adjust heading size for mobile */
+            }
+            h2 {
+                font-size: 1.2em; /* Adjust subheading size for mobile */
+            }
+            .pm-attribution-div {
+                font-size: 10px; /* Smaller font for attribution on mobile */
+            }
+        }
+    </style>
 </head>
 <body>
-	<!-- btw you use the !-- thing to make comments or x out code. just saying-->
-	<!-- br / is used for line breaks -->
+    <h1>min makes crosswords</h1>
+    <p>play the most recent crossword, or scroll down for more</p>
 
-	<h1>min makes crosswords</h1>
-	<p>play the most recent crossword, or scroll down for more<p/>
+    <div style="position: relative; text-align: center;">
+        <iframe allow="web-share; fullscreen" src="https://amuselabs.com/pmm/crossword?id=0f06d443&set=b6a6d309620f432b97024bfbd25cbc130143e069b737880cc53df5996e612954&embed=1" aria-label="Puzzle Me Game"></iframe>
+        <div class="pm-attribution-div">Created by Minhee Han with the <a href="https://amuselabs.com/games/crossword/" target="_blank" style="color: #666666; text-decoration: underline;">crossword puzzle generator</a> from Amuse Labs</div>
+    </div>
 
-	<!-- below is the iframe embed for the most recent crossword. idk yet how to just put in the html file but whatever. i'll figure it out. -->
-	<div style="position: relative; text-align: center;"><iframe height="700px" width="100%" allow="web-share; fullscreen" style="border:none; width: 100% !important; position: static;display: block !important; margin: 0 !important;" src="https://amuselabs.com/pmm/crossword?id=0f06d443&set=b6a6d309620f432b97024bfbd25cbc130143e069b737880cc53df5996e612954&embed=1" aria-label="Puzzle Me Game"> </iframe><div class="pm-attribution-div" style="font-family: sans-serif; font-size: 12px; color: rgb(102, 102, 102); position: absolute; top: 100%; left: 50%; transform: translate(-50%, 0px); padding-top: 5px; width: 100%;">Created by Minhee Han with the <a href="https://amuselabs.com/games/crossword/" target="_blank" style="color: #666666; text-decoration: underline;">crossword puzzle generator</a> from Amuse Labs</div></div>
-
-<h2> archive </h2>
-<p>click <b>"min's notes"</b>for some commentary. please note there may be <b>spoilers</b> - open at your own discretion<p/>
-	
-<ol>
-	<li><a href="puzzle1.html" name="start">Do you know Minhee Han?</a> 8/8/24
-		<details name = "reqs" style="display:inline-block">
-  			<summary>min's notes</summary>
-    <p>-- Sorry, the code is a little atrocious, but you'll get used to it. Working on it. Anyway, this is the first mini crossword I ever made. There are some nods to things I enjoy, like BOBA. I thought BENTO and ROES kind of worked well together, like for a sushi bento vibe. ON AIR is a direct reference to my time as a music DJ. AW GEE gives Rick and Morty vibes. BAM is almost like BAMM, which was the acronym for the college dorm complex I RA'd at. </p></details>
-	</li>
-
-	<li><a href="puzzle2.html" name="start">What I may tell you I'm allergic to</a> 8/8/24
-		<details name = "reqs" style="display:inline-block">
-  			<summary>min's notes</summary>
-    <p>-- I have many allergies, including fruits, notably stone fruits. I love PEACHes... too bad I can't eat them. For anyone wondering why my gamer tag is usually "minheepeaches", this is the lore. </p></details>
-	</li>
-	
-	<li><a href="puzzle3.html" name="start">Alma matters</a> 8/8/24
-		<details name = "reqs" style="display:inline-block">
-  			<summary>min's notes</summary>
-    <p>-- This one certainly favors those who 1) went to Rutgers and 2) know me. Sorry if that's not you! </p></details>
-	</li>
-	
-	<li><a href="puzzle4.html" name="start">Hella vowels</a> 10/23/24
-		<details name = "reqs" style="display:inline-block">
-  			<summary>min's notes</summary>
-    <p>-- I thought it was sort of clever to have a sequence of vowels. You could argue that "y" should have been in there, but that would've made my life much harder. </p></details>
-	
-	</li>
-
-	<li><a href="puzzle5.html" name="start">V is for...</a> 10/23/24
-		<details name = "reqs" style="display:inline-block">
-  			<summary>min's notes</summary>
-    <p>-- This is one where the shape (aka the filled in black squares) really dictated the theme. I was already thinking about Nov 5 and all related feelings... so just wanted to communicate the importance of voting in my own small way. </p></details>
-
-	</li>
-
-	<li><a href="puzzle6.html" name="start">Today's horoscope</a> 10/25/24 
-		<details name = "reqs" style="display:inline-block">
-  			<summary>min's notes</summary>
-    <p>-- At this point is when I felt truly like a crossword maker. I was thinking about how "water sign" could mean RAIN but also SCORPIO, my star sign, and so on. Aha! Too bad SCORPIO, CANCER, and PISCES are all too long (letter-wise) for a mini, so I settled for "fire signs". Please pause for a moment of triumph. </p></details>
-	
-	</li>
-	
-	<li><a href="puzzle7.html" name="start">Apple Sauce</a> 10/28/24
-		<details name = "reqs" style="display:inline-block">
-  			<summary>min's notes</summary>
-    <p>-- Another one where I tried to be all matchy matchy. I thought having a CRISS and CROSS in a crisscross shape, and then SIN and AISLE made for a nice, churchly puzzle. Idk, I felt really smart. </p></details>
-	</li>
-</ol>
-
-<!-- i'd love to add some type of notes thing to each listing so i can type in some fun stuff, like goofs, or how i came up with the puzzles or what i was inspired by-->
-
+    <h2>archive</h2>
+    <p>click <b>"min's notes"</b> for some commentary. please note there may be <b>spoilers</b> - open at your own discretion</p>
+    
+    <ol>
+        <li><a href="puzzle1.html">Do you know Minhee Han?</a> 8/8/24
+            <details>
+                <summary>min's notes</summary>
+                <p>-- Sorry, the code is a little atrocious, but you'll get used to it...</p>
+            </details>
+        </li>
+        <!-- Add the rest of your puzzle list items here, following the same structure -->
+    </ol>
 </body>
 </html>
