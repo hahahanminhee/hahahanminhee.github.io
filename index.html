@@ -12,7 +12,13 @@
             font-family: sans-serif;
         }
 
-        h1, h2 {
+        h1 {
+            margin: 10px 0;
+            text-align: left; /* Align headings to the left */
+            padding-left: 10px; /* Added padding to create space from the edge */
+        }
+
+         h2 {
             margin: 20px 0;
             text-align: left; /* Align headings to the left */
             padding-left: 10px; /* Added padding to create space from the edge */
@@ -78,6 +84,12 @@
             iframe {
                 height: 500px; /* Adjust height for mobile screens */
             }
+        }
+        /* Space at the bottom of the page */
+        body::after {
+            content: '';
+            display: block;
+            height: 100px; /* Increased height for more space at the bottom */
         }
     </style>
 </head>
